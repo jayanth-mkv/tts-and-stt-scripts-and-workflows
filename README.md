@@ -1,29 +1,35 @@
 <div align="center">
 
-# TTS & STT Scripts and Workflows
+# Speech AI Scripts & Workflows
 
-**Small speech automation experiments, starting with a Deepgram-backed real-time transcription relay.**
+**A growing library of provider-agnostic speech AI scripts, relays, and workflow examples.**
 
 [![Node.js](https://img.shields.io/badge/Node.js-CommonJS-339933?logo=nodedotjs&logoColor=white)](speech-to-text-realtime-transcript-deepgram/package.json)
 [![Deepgram SDK](https://img.shields.io/badge/Deepgram-SDK%201.x-13EF93)](speech-to-text-realtime-transcript-deepgram/package.json)
 
-[Current project](#current-project) · [Quick start](#quick-start) · [Protocol](#protocol) · [Status](#status-and-limitations)
+[Current catalog](#current-catalog) · [Catalog direction](#catalog-direction) · [Quick start](#quick-start) · [Protocol](#protocol) · [Status](#status-and-limitations)
 
 </div>
 
 ## What is it?
 
-This repository is intended as a collection of text-to-speech and speech-to-text experiments. At present, it contains one speech-to-text project and no TTS implementation.
+This repository is intended as a growing collection of speech AI scripts, relays, and workflow examples. It can include text-to-speech, speech-to-text, streaming, batch, and provider-specific integrations.
+
+**Current contents:** one speech-to-text relay and no TTS implementation. The current relay uses Deepgram, but the collection itself is not tied to one provider.
 
 The current project opens a local WebSocket server, forwards incoming audio frames to Deepgram live transcription, and sends Deepgram transcript events back to the connected client.
 
-The collection can grow with additional speech utilities and providers; each entry should document its runtime, external dependencies, and operational limits independently.
+Each entry documents its runtime, external dependencies, and operational limits independently.
 
-## Current project
+## Current catalog
 
 | Project | Runtime | Local endpoint | Service dependency |
 | --- | --- | --- | --- |
 | [`speech-to-text-realtime-transcript-deepgram/`](speech-to-text-realtime-transcript-deepgram) | Node.js, CommonJS | `ws://localhost:3002` | Deepgram live transcription API |
+
+## Catalog direction
+
+Future entries may add TTS utilities, alternative STT providers, local-model experiments, and reusable speech workflows. They will be listed only after their source, configuration requirements, and operational limitations are committed.
 
 ## Quick start
 
