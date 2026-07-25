@@ -17,6 +17,8 @@ This repository is intended as a collection of text-to-speech and speech-to-text
 
 The current project opens a local WebSocket server, forwards incoming audio frames to Deepgram live transcription, and sends Deepgram transcript events back to the connected client.
 
+The collection can grow with additional speech utilities and providers; each entry should document its runtime, external dependencies, and operational limits independently.
+
 ## Current project
 
 | Project | Runtime | Local endpoint | Service dependency |
